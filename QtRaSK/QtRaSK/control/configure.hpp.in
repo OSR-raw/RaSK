@@ -1,0 +1,14 @@
+#ifndef CONTROL_CONFIGURE_HPP
+#define	CONTROL_CONFIGURE_HPP
+
+#include <string>
+
+namespace control {
+
+const std::string PROJECT_BINARY_DIR = "${PROJECT_BINARY_DIR}";
+
+std::string get_resource(const std::string &relpath) { return PROJECT_BINARY_DIR + "/" + relpath; }
+
+}
+
+#endif
